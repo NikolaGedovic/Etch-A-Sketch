@@ -1,0 +1,135 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  background-color: #F8F0E5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input {
+  width: 100%;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 21px;
+  border: 1px solid #252B48;
+  border-radius: 5px;
+  background-color: #F8F0E5;
+}
+
+/* Header Section */
+
+header {
+  padding: 80px 0;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.51);
+  color: #252B48;
+  text-align: center;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Settings Section */
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 250px;
+  height: 700px;
+}
+
+.color-picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #F8F0E5;
+  width: 115px;
+  height: 115px;
+  border: none;
+}
+
+.color-picker::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+.color-picker::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+.size-value {
+  margin-bottom: -20px;
+  font-size: 22px;
+}
+
+/* Container */
+
+#container {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  width: 700px;
+  height: 700px;
+}
+
+/* Footer Section */
+
+p {
+  color: #252B48;
+}
+
+.github-icon {
+  color: #252B48;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  font-size: 30px;
+  background-color: #A9A9A9;
+}

@@ -4,6 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+    </header>
+
+    <main class="main">
+      <div class="settings">
+        <input
+          type="color"
+          id="colorPicker"
+          class="color-picker"
+          value="#252B48"
+        />
+        <button id="color-btn" class="">Color Mode</button>
+        <button id="rainbow-btn" class="">Rainbow Mode</button>
+        <button id="eraser-btn" class="">Eraser</button>
+        <button id="clear-btn" class="">Clear</button>
+        <div id="size-value" class="size-value">16 x 16</div>
+        <input class="range-input" type="range" value="16" min="1" max="64" />
+      </div>
+      <div id="container"></div>
+    </main>
+
+    <footer>
+      <p>Nikola Gedovic</p>
+      <a href="https://github.com/NikolaGedovic"
+        ><i class="github-icon fa-brands fa-github"></i
+      ></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
